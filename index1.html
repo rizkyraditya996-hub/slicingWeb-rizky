@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- iconify icon -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS (panggil terakhir agar tidak ditimpa Bootstrap) -->
+    <link rel="stylesheet" href="style1.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top bg-light">
+        <div class="container d-flex">
+            <!-- Kiri -->
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#" style="color:black;">Vills <i class="bi bi-chevron-down"></i></a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#" style="color:black;">Offer <i class="bi bi-chevron-down"></i></a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#" style="color:black;">Dining</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#" style="color:black;">Experience <i class="bi bi-chevron-down"></i></a>
+                </li>
+            </ul>
+
+            <!-- Tengah (Logo) -->
+            <a class="navbar-brand mx-4" href="https://www.viceroybali.com/en/">
+                <img src="img/logoblack.png" height="100" alt="Logo">
+            </a>
+
+            <!-- Kanan -->
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#" style="color:black;">Media <i class="bi bi-chevron-down"></i></a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#" style="color:black;">Facilities</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#" style="color:black;">Contact</a>
+                </li>
+                <button type="button" class="btn-dark cormorant px-3 my-1"
+                    style="font-size: 18px; background-color: black; color: white;">BOOK NOW</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- Video -->
+    <section>
+        <div class="position-relative">
+            <video controls width="100%" autoplay muted loop>
+                <source src="img/video/Viceroy-Bali-op.mp4" type="video/mp4">
+            </video>
+            <div class="booking-form position-absolute bottom-0 start-50 translate-middle-x mb-5">
+                <div class="row g-0">
+                    <!-- Check In -->
+                    <div class="col border-end border-light">
+                        <div class="booking-field">
+                            <label class="booking-label">Check In</label>
+                            <input type="date" class="booking-input" name="checkin-date" placeholder="Select date">
+                        </div>
+                    </div>
+                    <!-- Check Out -->
+                    <div class="col border-end border-light">
+                        <div class="booking-field">
+                            <label class="booking-label">Check Out</label>
+                            <input type="date" class="booking-input" name="checkout-date" placeholder="Select date">
+                        </div>
+                    </div>
+                    <!-- Guest -->
+                    <div class="col border-end border-light">
+                        <div class="booking-field">
+                            <label class="booking-label">Guest</label>
+                            <select class="booking-input" name="guest-count">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Promo Code -->
+                    <div class="col">
+                        <div class="booking-field">
+                            <label class="booking-label">Promo Code</label>
+                            <input type="text" class="booking-input" name="promo-code" placeholder="Promo Code">
+                        </div>
+                    </div>
+                    <!-- Book Now Button -->
+                    <div class="col-auto">
+                        <button type="button" class="booking-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video End -->
+
+
+    <!-- about us -->
+    <section class="py-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="about-us-h1 py-5">Viceroy Bali Luxury Resort</h1>
+                        <p class="cormorant" style="font-size: 20px;">Swaying palms, dramatic valley views, private
+                            infinity pools and <br> nowhere else to be. Welcome to your luxury resort oasis in the <br>
+                            cultural heartland of Bali.</p>
+                        <p class="cormorant" style="font-size: 20px;">A secluded haven for romantics, adventurers, and
+                            the mindful. <br>Viceroy is a family run luxurious 40 villa retreat only 5 minutes from
+                            <br>the centre of Ubud. Revel in discreet hospitality with the ultimate <br> attention to
+                            detail.</p>
+                        <button type="button" class="cormorant btn btn-dark my-4">Book Your Stay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us end -->
+
+
+    <!-- Our Luxury Villas -->
+    <section>
+        <div class="container-fluid " style="background-color: #FEF9F2">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-8 pt-5" style="padding-bottom: 70px;">
+                        <img src="img/1.webp" alt="">
+                    </div>
+                    <div class="col-4 ps-3">
+                        <h2 class="cormorant" style="font-size: 20px; padding-top: 100px;">
+                            <a href="" style="color: black;">Our Luxury Villas</a>
+                        </h2>
+                        <h3 class="cormorant" style="font-size: 20px;">40 private pool villas with <br>majestic valley
+                            views</h3>
+                        <p class="cormorant" style="font-size: 20px; padding-top: 50px;">Balinese tropical elegance
+                            alongside modern <br> contemporary lines sets the tone for these richly <br> adorned rooms.
+                            Oversized infinity pools,<br>unparalleled comfort and luxury detailing.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Luxury Villas end -->
+
+
+    <!-- carousel Villa -->
+    <section>
+        <div class="container" style="padding-bottom: 100px ;">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="nav-suite mx-auto my-5">
+                    <a href="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">Terrace Villa</a>
+                    <a href="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2">Pool
+                        Suite</a>
+                    <a href="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3">Delux
+                        Terrace Villa</a>
+                    <a href="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4">Viee
+                        Regal Villa</a>
+                    <a href="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5">Elephant Villa</a>
+                    <a href="" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6">The
+                        Vieeroy Villa</a>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row pt-5">
+                            <div class="col-3 pt-3">
+                                <h3 class="cormorant" style="font-size: 31px;">Terrace Villa</h3>
+                                <p class="cormorant" style="font-size: 20px;">Terrace Villas features a traditional balé
+                                    overlooking a private heated pool with
+                                    jungle valley views. It includes an open-plan bathroom, luxurious amenities, and is
+                                    ideal for couples seeking a romantic getaway or weekend escape. The bedroom features
+                                    a comfortable sofa area with a generous living space and fitted with luxury
+                                    amenities, like a Bower and Wilkins Bluetooth Speaker and rain shower.</p>
+                                <a href="" class="cormorant fs-3" style=" color: #212529;">View Terrace Villa</a>
+                            </div>
+                            <div class="col-9">
+                                <img src="img/2.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row pt-5">
+                            <div class="col-3 pt-3">
+                                <h3 class="cormorant" style="font-size: 31px;">Pool Suite</h3>
+                                <p class="cormorant" style="font-size: 20px;">Dive into the cozy intimacy of these
+                                    spacious
+                                    suites, where indoor and outdoor living seamlessly merge in the stunning interior,
+                                    heated plunge pool, and semi-outdoor bathroom. It's the perfect hideaway for couples
+                                    to unwind and soak up the breathtaking jungle views while staying protected.
+                                    The modern design adds a touch of casual elegance, inviting you to relax and create
+                                    unforgettable memories in this blissful sanctuary.
+                                    amenities, like a Bower and Wilkins Bluetooth Speaker and rain shower.</p>
+                                <a href="" class="cormorant" style="font-size: 30px; color: #212529;">View Terrace
+                                    Villa</a>
+                            </div>
+                            <div class="col-9">
+                                <img src="img/12.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row pt-5">
+                            <div class="col-3 pt-3">
+                                <h3 class="cormorant" style="font-size: 31px;">Deluxe Terrace Villa</h3>
+                                <p class="cormorant" style="font-size: 20px;">The Deluxe Terrace Villas are the most
+                                    sought-after accommodations,
+                                    featuring a magnificent heated infinity pool, a spacious marble terrace with an
+                                    outdoor balé, dual vanities,
+                                    a freestanding bathtub, and a walk-in wardrobe. The views across the valley are
+                                    uninterrupted and spectacular.
+                                    Expect a design that integrates Balinese architecture and modernity seamlessly. The
+                                    smart TV's,
+                                    espresso machines and Bower And Wilkins speaker add to this sanctuary.</p>
+                                <a href="" class="cormorant" style="font-size: 30px; color: #212529;">View Terrace
+                                    Villa</a>
+                            </div>
+                            <div class="col-9">
+                                <img src="img/13.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row pt-5">
+                            <div class="col-3 pt-3">
+                                <h3 class="cormorant" style="font-size: 31px;">Vice Regal Villa</h3>
+                                <p class="cormorant" style="font-size: 20px;">These two bedrooms villas are fit for
+                                    royalty,
+                                    boasting an expansive master bedroom plus living area that steps out to an expansive
+                                    deck with stunning jungle views.
+                                    The heated private pool is partially covered, perfect for all times of day.
+                                    The second bedroom is accessed via an outside staircase and with a private terrace
+                                    and open plan style.
+                                    Expect modern clean lines with touches of Balinese architecture. Expect the ultimate
+                                    in luxury and privacy.</p>
+                                <a href="" class="cormorant" style="font-size: 30px; color: #212529;">View Terrace
+                                    Villa</a>
+                            </div>
+                            <div class="col-9">
+                                <img src="img/14.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row pt-5">
+                            <div class="col-3 pt-3">
+                                <h3 class="cormorant" style="font-size: 31px;">Elephant Villa</h3>
+                                <p class="cormorant" style="font-size: 20px;">Offering one of the best valley views in
+                                    Ubud this individual private pool villa offers traditional Balinese design and
+                                    modern amenities.
+                                    The open plan marble bathroom leads to a covered outdoor deck with the sound of the
+                                    rolling river below. The beautiful, thatched roof typifies the feeling of a time
+                                    gone by.
+                                    A playful elephant stone carving adorns the entrance way and really brings this
+                                    special villa to life. Expect the ultimate in privacy.</p>
+                                <a href="" class="cormorant" style="font-size: 30px; color: #212529;">View Terrace
+                                    Villa</a>
+                            </div>
+                            <div class="col-9">
+                                <img src="img/15.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row pt-5">
+                            <div class="col-3 pt-3">
+                                <h3 class="cormorant" style="font-size: 31px;">The Viceroy Villa</h3>
+                                <p class="cormorant" style="font-size: 20px;">The crowning jewel of the Viceroy
+                                    collection, the Viceroy Villa is one of the top family villas in Bali.
+                                    This 2-bedroom expansive villa has two master bedrooms with lavish marble ensuites,
+                                    separated by a common semi-outdoor living and dining area adorned by a double tiered
+                                    thatched roof.
+                                    Both bedrooms look out to the 15-meter heated pool and grass gardens; with the lush
+                                    valley as a perfect backdrop.</p>
+                                <a href="" class="cormorant" style="font-size: 30px; color: #212529;">View Terrace
+                                    Villa</a>
+                            </div>
+                            <div class="col-9">
+                                <img src="img/16.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- carousel Villa end -->
+
+    <!-- Dining at Viceroy -->
+    <section class=" border border-bottom" style="background-color:#FEF9F2;">
+        <section class="">
+            <div class="container">
+                <div class="row  py-5 cormorant">
+                    <div class="col-lg-8">
+                        <img src="img/3.webp" alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="fs-5 pt-5"><a href="" style="color: black;">DINING AT VICEROY</a></h2>
+                        <h3 class="fs-5" style="font-style: italic;">From casual to fine dining</h3>
+                        <p class="pt-5 fs-5">One of Bali’s pre-eminent dining destinations, Viceroy Bali is celebrated
+                            as
+                            much for its
+                            exceptional Bali Restaurant food and drink as its beautiful private pool villas. Explore the
+                            gourmet all day dining CasCades, the beating heart of the hotel and the award winning
+                            Apéritif
+                            fine dining restaurant ; an eclectic degustation experience</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Dining at Viceroy End -->
+
+            <!-- Pinstripe Cocktail Bar -->
+            <section class=" border-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 offset-1 pe-5 cormorant border-end  py-5">
+                            <img src="img/4.webp" alt="" class="img-fluid" style="height: 430px;" >
+                            <h2 class="pt-5"><a href="" class="fs-5" style="color: black;">PINSTRIPE COCKTAIL BAR</a>
+                            </h2>
+                            <p class="fs-5">Step back in time to an era of frivolity, elegance, and glamour at Pinstripe
+                                Bar – the
+                                ultimate destination for a speakeasy vibe you didn’t know existed in Ubud. From the
+                                moment
+                                you enter, you’ll be swept away by the vibrant energy and the enticing aroma of expertly
+                                crafted cocktails by our Head Mixologist, Panji.</p>
+                        </div>
+                        <div class="col-5 ps-5 cormorant px-4 py-5">
+                            <img src="img/5.webp" alt="" class="img-fluid" style="height: 430px;">
+                            <h2 class="pt-5"><a href="" class="fs-5" style="color: black;">AKOYA SPA</a></h2>
+                            <p class="fs-5">Considered one of Bali’s most tranquil settings, the perfect location for the pursuit of
+                                health and wellbeing. Exuding relaxation with its commodious couples’ massage rooms with
+                                full bath and facilities, luxurious reflexology chairs and a beauty salon.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+
+
+
+    <!-- Hear from our Guests -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row cormorant text-center">
+                <div class="col">
+                    <h1 class="pt-5 pb-3">Hear from our Guests</h1>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p class="fs-4">Rated 4.7 / 5 based on 543 Reviews <br>
+                        <a href="" class="fs-4" style="color: black; text-decoration: none; font-weight: bold;">Click to
+                            review us on Google</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- carousel review -->
+        <div id="carousel-review" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Review 1 -->
+                <div class=" review1 col-6 offset-3 text-center  fs-5 cormorant">
+                    <p>
+                        Absolutely incredible hotel. Spent several days here on our honeymoon trip of 4 locations,
+                        and it was both mine and my wife’s favorite hotel. Beautiful rooms, heated pools, great
+                        food, and an amazingly helpful, friendly and kind staff. They offer rides into the town for
+                        drop offs and pickups which was an amazing benefit, and the hotel has a filtered water
+                        system which is a rare treat when staying in Bali. Also it has one of the best gyms I’ve
+                        ever seen in a hotel. We will 100% be staying here again if we are hopefully able to make
+                        another trip to Bali in the near future.</p>
+                    <div class=" pt-3">
+                        <h2 class="fs-5" style="font-weight: bold;">Jesse SanGiuliano</h2>
+                        <p>Traveler</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Review 2 -->
+                <div class=" review1 col-6 offset-3 text-center  fs-5 cormorant">
+                    <p>
+                        We were impressed with the experience of staying at this place. We haven’t even left yet,
+                        but from the moment we set foot here, we were surprised by the smallest details. We have
+                        traveled to more than 20 countries and have never been so well treated and attended to. The
+                        hotel’s facilities are fantastic, the food is wonderful, and the service is second to none.
+                        All the staff are extremely friendly, polite, and always willing to help. It was our
+                        honeymoon and we will never forget the days we spent here. It will certainly be etched in
+                        our hearts and we will return soon. This message goes out to couples: give yourself a gift
+                        and stay at The Viceroy. You will never forget this experience.</p>
+                    <div class=" pt-3">
+                        <h2 class="fs-5" style="font-weight: bold;">Leonardo Aguiar</h2>
+                        <p>Traveler</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- Review 3 -->
+                <div class=" review1 col-6 offset-3 text-center  fs-5 cormorant">
+                    <p>
+                        Click to review us on Google
+                        We spent 2 weeks in Bali for our honeymoon and the Viceroy was our highlight. If you’re
+                        considering spending time in Ubud then I strongly recommend you consider this incredible
+                        Oasis hidden in the rainforest. Room – Absolutely amazing, beautiful Service – The best you
+                        could imagine, it honestly felt like we were the only couple in the hotel Location –
+                        Perfect. They run a shuttle (basically a lovely air conditioned car) to Ubud Centre, every
+                        day. One of the evenings it took us just 7 minutes to get home. Food – Delicious Can’t
+                        recommend this place enough.</p>
+                    <div class=" pt-3">
+                        <h2 class="fs-5" style="font-weight: bold;">Anthony Panayi</h2>
+                        <p>Traveler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- slide kiri -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-review"
+                data-bs-slide="prev">
+                <span class="iconify" data-icon="mdi:chevron-left" style="color: black; font-size: 32px;"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!-- slide kanan -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-review"
+                data-bs-slide="next">
+                <span class="iconify" data-icon="mdi:chevron-right" style="color: black; font-size: 32px;"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </section>
+    <!-- Carousel review end -->
+    <!-- Hear from our Guests End -->
+
+
+    <!-- Gallery -->
+    <!-- gallery1 -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="row cormorant">
+                <div class="col-12 text-center pt-5">
+                    <h2 class="fs-1 pb-5">Exclusive offers and package stays</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-4 px-4">
+                        <img src="img/6.webp" alt="" class="img-fluid w-100 h-100">
+                    </div>
+                    <div class="col-4 px-4">
+                        <img src="img/7.webp" alt="" class="img-fluid  w-100 h-100">
+                    </div>
+                    <div class="col-4 px-4">
+                        <img src="img/8.webp" alt="" class="img-fluid  w-100 h-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center cormorant fs-5 pt-5">
+                <div class="col-4 px-4">
+                    <p class="pb-1"><a href="" style="color: black;">Secret Deal</a></p>
+                    <p>An insider sale which is designed exclusively with a code (secret) when booked here on our
+                        official website.</p>
+                </div>
+                <div class="col-4 px-4">
+                    <p class="pb-1"><a href="" style="color: black;">Last Minute Deals</a></p>
+                    <p>Get a 30% discount on our best rates for Bali holidays when you book within 14 days of your stay.
+                    </p>
+                </div>
+                <div class="col-4 px-4">
+                    <p class="pb-1"><a href="" style="color: black;">Exclusive Long Stay Offer</a></p>
+                    <p>Take advantage of our Exclusive Long Stay Offer allowing you the opportunity to explore the
+                        island with Viceroy Bali as your base.</p>
+                </div>
+            </div>
+            <!-- gallery2 -->
+            <div class="row cormorant">
+                <div class="row text-center">
+                    <div class="col-4 px-4">
+                        <img src="img/9.webp" alt="" class="img-fluid w-100 h-100">
+                    </div>
+                    <div class="col-4 px-4">
+                        <img src="img/10.webp" alt="" class="img-fluid  w-100 h-100">
+                    </div>
+                    <div class="col-4 px-4">
+                        <img src="img/11.webp" alt="" class="img-fluid  w-100 h-100">
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center cormorant fs-5 pt-5">
+                <div class="col-4 px-4">
+                    <p class="pb-1"><a href="" style="color: black;">Bali Wellness Package</a></p>
+                    <p>Viceroy Bali is your sanctuary in paradise. Situated on one of the best valleys in Ubud, our
+                        suite escape is designed for the more cost effective traveller.</p>
+                </div>
+                <div class="col-4 px-4">
+                    <p class="pb-1"><a href="" style="color: black;">
+                            Bali Honeymoon Package</a></p>
+                    <p>Viceroy Bali is a sublime lovers’ retreat that will transport you to a world of beautiful
+                        tranquility for your Bali honeymoon.
+                    </p>
+                </div>
+                <div class="col-4 px-4">
+                    <p class="pb-1"><a href="" style="color: black;">Bali Luxury Package</a></p>
+                    <p>Your luxury package stay is all about the finer details, complemented by a dedicated 24/7 private
+                        concierge. We have included a plethora of offerings to effortlessly enhance your stay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery end -->
+
+
+    <!-- Reviews on TripAdvisor -->
+    <section class="py-5 pb-5">
+        <div class="container">
+            <div class="row cormorant text-center">
+                <div class="col">
+                    <h1 class="pt-5 pb-3">Reviews on TripAdvisor</h1>
+                    <span class="mb-3 d-block">
+                        <i class="bi bi-circle-fill" style="color: #00A725;"></i>
+                        <i class="bi bi-circle-fill" style="color: #00A725;"></i>
+                        <i class="bi bi-circle-fill" style="color: #00A725;"></i>
+                        <i class="bi bi-circle-fill" style="color: #00A725;"></i>
+                        <i class="bi bi-circle-fill" style="color: #00A725;"></i>
+                    </span>
+                    <p class="fs-5">Rated 5 / 5 based on 543 Reviews </p>
+                </div>
+            </div>
+        </div>
+        <!-- carousel review -->
+        <div id="carousel-review-advisor" class="carousel slide">
+            <div class="carousel-inner">
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Review 1 -->
+                    <div class=" review1 col-6 offset-3 text-center  fs-5 cormorant">
+                        <p>
+                            Rated 5 / 5 based on 1,774 Reviews
+                            Wow We have traveled all around Bali and the world, stayed in many 5 star hotels and without
+                            any doubt Viceroy Bali is a step in front of all other luxurious hotels. It was
+                            exceptionally clean and well maintained. The staff were incredibly friendly and helpful. The
+                            service was like never seen before. We celebrated our anniversary and staff including
+                            management teams did so many things and surprises for us we will never forget . The food in
+                            the hotel was exceptional and I could rate it michilin star level. The rice walk free
+                            activity was an eye opener and worth doing. We really enjoyed it. Special thanks to Jero,
+                            Patrick and all the team. I highly recommend you stay in this fabulous luxurious resort . We
+                            will be back shortly.</p>
+                        <div class=" pt-3">
+                            <h2 class="fs-5" style="font-weight: bold;">Kati K</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Review 2 -->
+                    <div class=" review1 col-6 offset-3 text-center  fs-5 cormorant">
+                        <p>
+                            I chose Viceroy Bali as I’d treated myself to some fine dining at the renowned Apéritif
+                            restaurant, but also wishing to visit Ubud as a contrast to Nusa Dua’s beach resorts where
+                            I’d spent a few days. The award winning hotel is a calm haven of luxury overlooking the lush
+                            jungle greenery of the Valley of the Kings. I stayed in a large Deluxe Terrace Villa with
+                            its own infinity pool which was peaceful and private. The CasCades restaurant offers casual
+                            dining, excellent food and drink with enthusiastic service. The Pinstripe bar has the feel
+                            of a 1920s Gentlemens’ Club or Speakeasy offers some magnificent mixology too. There is a
+                            free shuttle service into the centre of Ubud, a 10 minute journey depending on traffic,
+                            which is a beneficial service. Overall, a credit to the owners, management and staff in
+                            making this perfect property an exceptional experience.
+                        </p>
+                        <div class=" pt-3">
+                            <h2 class="fs-5" style="font-weight: bold;">TheGreatBaldini</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Review 3 -->
+                    <div class=" review1 col-6 offset-3 text-center  fs-5 cormorant">
+                        <p>
+                            Just a wonderful experience. The room was incredible, service outstanding, a place to return
+                            to many more times. Butler service was excellent. Probably the best food room service menu I
+                            know. Breakfast can be served in the villa without any limitations. Their fine dining
+                            restaurant Aperitif has an incredible chef from Belgium and the best fine dining option Ubud
+                            has to offer
+                        </p>
+                        <div class=" pt-3">
+                            <h2 class="fs-5" style="font-weight: bold;">deepsapphyr</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- slide kiri -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-review-advisor"
+                data-bs-slide="prev">
+                <span class="iconify" data-icon="mdi:chevron-left" style="color: black; font-size: 32px;"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!-- slide kanan -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-review-advisor"
+                data-bs-slide="next">
+                <span class="iconify" data-icon="mdi:chevron-right" style="color: black; font-size: 32px;"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </section>
+    <!-- Reviews on TripAdvisor -->
+
+
+
+    <!-- logo brand -->
+    <section class="pt-4">
+        <div class="container-fluid py-5" style="background-color: black;">
+            <div class="container">
+                <div class="row border-bottom">
+                    <div class="col-2 px-5">
+                        <img src="img/logo2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-2 px-5">
+                        <img src="img/logo3.png" alt="" class=" img-fluid">
+                    </div>
+                    <div class="col-2 px-5">
+                        <img src="img/logo4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-2 px-5">
+                        <img src="img/logo5.webp" alt="" class=" img-fluid">
+                    </div>
+                     <div class="col-2 px-5">
+                        <img src="img/logo6.webp" alt="" class=" img-fluid">
+                    </div>
+                    <div class="col-2 px-">
+                        <img src="img/logo7.gif" alt="" class=" img-fluid" style="height: 70%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- logo brand -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-black pt-4">
+            <div class="container">
+                <div class="row text-white fs-4 cormorant">
+                    <div class="col-2">
+                        <p class="fw-bold  ">CONTACT</p>
+                        <i class="bi bi-telephone"> +62 361 971 777</i><br>
+                        <i class="bi bi-envelope fs-5"> res@viceroybali.com</i><br>
+                        <i class="bi bi-geo-alt"> Br. Nagi, Jl. Lanyahan, Petulu, Kecamatan Ubud, Kabupaten Gianyar,
+                            Bali 80571</i>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold"><a href="" class="text-footer">Ubud Luxury Villas</a></p>
+                        <p><a href="" class="text-footer">Club Room</a></p>
+                        <p><a href="" class="text-footer">Activities</a></p>
+                        <p><a href="" class="text-footer">Destination</a></p>
+                        <p><a href="" class="text-footer">Blog</a></p>
+                        <p><a href="" class="text-footer">Sustainability</a></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold"><a href="" class="text-footer">Dining</a></p>
+                        <p><a href="" class="text-footer">Wellness</a></p>
+                        <p><a href="" class="text-footer">Adventure</a></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold"><a href="" class="text-footer">About</a></p>
+                        <p><a href="" class="text-footer">Awards</a></p>
+                        <p><a href="" class="text-footer">Contact</a></p>
+                        <p><a href="" class="text-footer">FAQs</a></p>
+                        <p><a href="" class="text-footer">Media Room</a></p>
+                        <p><a href="" class="text-footer">Privacy Policy</a></p>
+                        <p><a href="" class="text-footer">Terms of Use</a></p>
+                    </div>
+                    <div class="col-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1536 1792">
+                            <path fill="currentColor"
+                                d="M971 1244v211q0 67-39 67q-23 0-45-22v-301q22-22 45-22q39 0 39 67m338 1v46h-90v-46q0-68 45-68t45 68m-966-218h107v-94H138v94h105v569h100zm288 569h89v-494h-89v378q-30 42-57 42q-18 0-21-21q-1-3-1-35v-364h-89v391q0 49 8 73q12 37 58 37q48 0 102-61zm429-148v-197q0-73-9-99q-17-56-71-56q-50 0-93 54V933h-89v663h89v-48q45 55 93 55q54 0 71-55q9-27 9-100m338-10v-13h-91q0 51-2 61q-7 36-40 36q-46 0-46-69v-87h179v-103q0-79-27-116q-39-51-106-51q-68 0-107 51q-28 37-28 116v173q0 79 29 116q39 51 108 51q72 0 108-53q18-27 21-54q2-9 2-58M790 525V315q0-69-43-69t-43 69v210q0 70 43 70t43-70m719 751q0 234-26 350q-14 59-58 99t-102 46q-184 21-555 21t-555-21q-58-6-102.5-46T53 1626q-26-112-26-350q0-234 26-350q14-59 58-99t103-47q183-20 554-20t555 20q58 7 102.5 47t57.5 99q26 112 26 350M511 0h102L492 399v271H392V399q-14-74-61-212Q294 84 266 0h106l71 263zm370 333v175q0 81-28 118q-38 51-106 51q-67 0-105-51q-28-38-28-118V333q0-80 28-117q38-51 105-51q68 0 106 51q28 37 28 117m335-162v499h-91v-55q-53 62-103 62q-46 0-59-37q-8-24-8-75V171h91v367q0 33 1 35q3 22 21 22q27 0 57-43V171z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                            <path fill="currentColor"
+                                d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="34" viewBox="0 0 32 32">
+                            <path fill="currentColor"
+                                d="M30.683 12.708c.375-1.609 1.568-3.219 1.568-3.219h-5.349c-3.005-1.943-6.647-2.968-10.688-2.968c-4.187 0-7.968 1.041-10.953 3H.252s1.176 1.583 1.556 3.181C.835 14.046.252 15.666.252 17.447c0 4.416 3.599 8.011 8.015 8.011c2.527 0 4.765-1.183 6.245-3.005l1.697 2.552l1.724-2.584a7.85 7.85 0 0 0 2.937 2.324c1.943.88 4.125.979 6.125.239c4.141-1.536 6.26-6.161 4.74-10.301a7.8 7.8 0 0 0-1.079-1.98zm-4.23 10.765a6.32 6.32 0 0 1-4.891-.192a6.33 6.33 0 0 1-2.651-2.303c-.272-.4-.5-.833-.672-1.296c-.199-.527-.292-1.068-.344-1.62c-.099-1.109.057-2.229.536-3.271a6.4 6.4 0 0 1 3.604-3.328c3.319-1.219 7 .484 8.219 3.791c1.224 3.308-.479 6.991-3.781 8.215h-.02zm-12.89-2.446a6.4 6.4 0 0 1-5.297 2.817c-3.525 0-6.401-2.875-6.401-6.396s2.876-6.401 6.401-6.401c3.527 0 6.396 2.88 6.396 6.401c0 .219-.036.416-.063.64c-.109 1.079-.453 2.1-1.036 2.959zm-9.366-3.663c0 2.188 1.781 3.959 3.964 3.959s3.959-1.771 3.959-3.959a3.959 3.959 0 0 0-7.918 0zm16.068 0a3.956 3.956 0 1 0 3.953-3.952a3.963 3.963 0 0 0-3.959 3.952zm-14.697 0a2.594 2.594 0 0 1 2.583-2.593c1.417 0 2.599 1.167 2.599 2.593a2.6 2.6 0 0 1-5.203 0zm16.047 0a2.593 2.593 0 0 1 2.593-2.593a2.597 2.597 0 0 1-.015 5.193a2.597 2.597 0 0 1-2.6-2.6zm-5.407-9.443c2.88 0 5.48.516 7.761 1.548a8.1 8.1 0 0 0-2.543.479a7.9 7.9 0 0 0-4.5 4.167c-.416.88-.635 1.812-.719 2.755a8.03 8.03 0 0 0-7.844-7.437c2.281-.979 4.928-1.511 7.787-1.511z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"
+                                clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27c3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10c5.35 0 9.25-3.67 9.25-9.09c0-1.15-.15-1.81-.15-1.81" />
+                        </svg>
+                        <br>
+                        <img src="img/chse-certified.png" alt="" class="pt-4">
+                    </div>
+                </div>
+                <div class="row text-footer cormorant fs-5">
+                    <div class="col-12 pt-5">
+                        <p>Copyright 2025. All Right Reserved. Developed by Gaia Digital Agency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
